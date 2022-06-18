@@ -139,12 +139,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="GraphTemplate.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="EdgeData.hpp" />
     <ClInclude Include="EdgeTemplate.hpp" />
     <ClInclude Include="GraphTemplate.hpp" />
     <ClInclude Include="TreeTemplate.hpp" />
+    <ClInclude Include="VertexData.hpp" />
     <ClInclude Include="VertexTemplate.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
