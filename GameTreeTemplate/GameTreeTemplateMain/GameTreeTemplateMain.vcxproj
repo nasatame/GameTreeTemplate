@@ -143,6 +143,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="EdgeTemplate.hpp" />
+    <ClInclude Include="GraphTemplate.hpp" />
     <ClInclude Include="TreeTemplate.hpp" />
     <ClInclude Include="VertexTemplate.hpp" />
   </ItemGroup>

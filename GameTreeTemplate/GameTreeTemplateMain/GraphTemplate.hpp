@@ -1,16 +1,17 @@
 #pragma once
 
-#include "GraphTemplate.hpp"
+#include "VertexTemplate.hpp"
+#include "EdgeTemplate.hpp"
 
 namespace gtt {
 
-namespace tree {
+namespace graph {
 
 /// <summary>
-/// Tree ’¸“_‚Æ•Ó‚ğ‚ÂBzŠÂ‚µ‚È‚¢
+/// Graph ’¸“_‚Æ•Ó‚ğ‚Â
 /// </summary>
-template<class Vertex , class Edge>
-class TreeTemplate : public graph::GraphTemplate<Vertex , Edge> {
+template<class Vertex, class Edge>
+class GraphTemplate {
 public:
 
 	/// <summary>
