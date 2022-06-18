@@ -142,6 +142,7 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="EdgeTemplate.hpp" />
     <ClInclude Include="TreeTemplate.hpp" />
     <ClInclude Include="VertexTemplate.hpp" />
   </ItemGroup>
