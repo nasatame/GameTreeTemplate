@@ -1,10 +1,10 @@
-#pragma once
+﻿#pragma once
 
 namespace gtt {
 
 namespace graph {
 
-template<class VertexData>
+template<typename VertexData>
 class Vertex {
 public:
 

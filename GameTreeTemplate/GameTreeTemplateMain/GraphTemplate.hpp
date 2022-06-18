@@ -1,4 +1,4 @@
-#pragma once
+ï»¿#pragma once
 
 #include <vector>
 #include <memory>
@@ -10,34 +10,42 @@ namespace gtt {
 namespace graph {
 
 /// <summary>
-/// Graph ’¸“_‚Æ•Ó‚ğ‚Â
+/// Graph é ‚ç‚¹ã¨è¾ºã‚’æŒã¤
 /// </summary>
 template<class Vertex, class Edge>
 class GraphTemplate {
 public:
 
+	using GraphEdge = Edge;
+	using GraphVertex = Vertex;
+	using SizeType = typename std::vector<std::shared_ptr<Vertex>>::size_type;
+
+public:
 
 	/// <summary>
-	///  ’¸“_‚O‚ÌƒOƒ‰ƒt‚Ìì¬
+	///  é ‚ç‚¹ï¼ã®ã‚°ãƒ©ãƒ•ã®ä½œæˆ
 	/// </summary>
 	GraphTemplate() {};
 
 	/// <summary>
-	///  ƒOƒ‰ƒt‚Ìíœ
+	///  ã‚°ãƒ©ãƒ•ã®å‰Šé™¤
 	/// </summary>
 	~GraphTemplate() {};
 
 public:
 
-	/// <summary>
-	/// ’¸“_‚ğ’Ç‰Á‚·‚é
-	/// </summary>
-	bool AddVertex(Vertex vertex);
+
+	SizeType VertexSize() { return vertices_.size(); };
 
 	/// <summary>
-	/// •Ó‚ğ’Ç‰Á‚·‚é
+	/// é ‚ç‚¹ã‚’è¿½åŠ ã™ã‚‹
 	/// </summary>
-	bool AddEdge(Edge edge);
+	bool AddVertex(const GraphVertex vertex);
+
+	/// <summary>
+	/// è¾ºã‚’è¿½åŠ ã™ã‚‹
+	/// </summary>
+	bool AddEdge(const GraphEdge edge);
 
 private:
 
@@ -45,17 +53,40 @@ private:
 private:
 
 	/// <summary>
-	///  •ÓW‡
+	///  è¾ºé›†åˆ
 	/// </summary>
 	std::vector<std::shared_ptr<Vertex>> vertices_;
 
 	/// <summary>
-	///  ’¸“_W‡
+	///  é ‚ç‚¹é›†åˆ
 	/// </summary>
 	std::vector<std::shared_ptr<Edge>> edges_;
 
 
 
 };
+
+template<class Vertex, class Edge>
+bool GraphTemplate<Vertex, Edge>::AddVertex(const GraphTemplate::GraphVertex vertex)
+{
+
+	vertices_.emplace_back(std::make_shared<GraphTemplate::GraphVertex>(std::move(vertex)));
+
+	return true;
+}
+
+template<class Vertex, class Edge>
+bool GraphTemplate<Vertex, Edge>::AddEdge(const GraphTemplate::GraphEdge edge)
+{
+
+	edges_.emplace_back(std::make_shared<GraphTemplate::GraphEdge>(std::move(edge)));
+
+	return true;
+}
+
+
+
+
 }
 }
+

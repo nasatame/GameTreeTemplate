@@ -8,7 +8,6 @@ root = true
 cpp_generate_documentation_comments = xml
 
 # Visual C++ の書式設定
-
 cpp_indent_braces = false
 cpp_indent_multi_line_relative_to = innermost_parenthesis
 cpp_indent_within_parentheses = indent
@@ -67,3 +66,8 @@ cpp_space_around_assignment_operator = insert
 cpp_space_pointer_reference_alignment = left
 cpp_space_around_ternary_operator = insert
 cpp_wrap_preserve_blocks = one_liners
+
+# 全般設定
+[*]
+end_of_line = lf
+charset = utf-8-bom

@@ -13,33 +13,51 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="ヘッダー ファイル\gtt">
+      <UniqueIdentifier>{d05f9a62-fdc0-468f-bf2f-73dfe064de93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\gtt\graph">
+      <UniqueIdentifier>{500fb910-82a9-41f5-a8de-77a6a0626665}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\gtt\tree">
+      <UniqueIdentifier>{18f7a050-b49f-4f6e-a99d-60afba9c0178}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\gtt">
+      <UniqueIdentifier>{77f59d69-c0e1-44a7-b63a-af22aa966c84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\gtt\graph">
+      <UniqueIdentifier>{4d346360-f345-495b-a22e-b229f66efee7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\gtt\tree">
+      <UniqueIdentifier>{c4f96e8d-3b06-4218-9c97-e0625d8423ab}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="GraphTemplate.cpp">
-      <Filter>ソース ファイル</Filter>
+      <Filter>ソース ファイル\gtt\graph</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="TreeTemplate.hpp">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="VertexTemplate.hpp">
-      <Filter>ヘッダー ファイル</Filter>
+    <ClInclude Include="EdgeData.hpp">
+      <Filter>ヘッダー ファイル\gtt\graph</Filter>
     </ClInclude>
     <ClInclude Include="EdgeTemplate.hpp">
-      <Filter>ヘッダー ファイル</Filter>
+      <Filter>ヘッダー ファイル\gtt\graph</Filter>
     </ClInclude>
     <ClInclude Include="GraphTemplate.hpp">
-      <Filter>ヘッダー ファイル</Filter>
+      <Filter>ヘッダー ファイル\gtt\graph</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexTemplate.hpp">
+      <Filter>ヘッダー ファイル\gtt\graph</Filter>
     </ClInclude>
     <ClInclude Include="VertexData.hpp">
-      <Filter>ヘッダー ファイル</Filter>
+      <Filter>ヘッダー ファイル\gtt\graph</Filter>
     </ClInclude>
-    <ClInclude Include="EdgeData.hpp">
-      <Filter>ヘッダー ファイル</Filter>
+    <ClInclude Include="TreeTemplate.hpp">
+      <Filter>ヘッダー ファイル\gtt\tree</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

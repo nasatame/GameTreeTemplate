@@ -1,4 +1,4 @@
-#pragma once
+ï»¿#pragma once
 
 #include "GraphTemplate.hpp"
 
@@ -7,7 +7,7 @@ namespace gtt {
 namespace tree {
 
 /// <summary>
-/// Tree ’¸“_‚Æ•Ó‚ğ‚ÂBzŠÂ‚µ‚È‚¢
+/// Tree é ‚ç‚¹ã¨è¾ºã‚’æŒã¤ã€‚å¾ªç’°ã—ãªã„
 /// </summary>
 template<class Vertex , class Edge>
 class TreeTemplate : public graph::GraphTemplate<Vertex , Edge> {
@@ -34,3 +34,4 @@ private:
 };
 }
 }
+

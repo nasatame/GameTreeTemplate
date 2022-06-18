@@ -1,11 +1,11 @@
-#pragma once
+﻿#pragma once
 
 
 namespace gtt {
 
 namespace graph {
 
-template<class EdgeData>
+template<typename EdgeData>
 class Edge {
 public:
 
