@@ -15,7 +15,7 @@ int main(void) {
 
 	using NormalTree =
 		gtt::tree::TreeTemplate<
-		gtt::graph::Edge<gtt::graph::EdgeData>,
+		gtt::graph::Edge<gtt::graph::UndirectedEdgeData>,
 		gtt::graph::Vertex<gtt::graph::VertexData>>;
 
 	NormalTree tree;

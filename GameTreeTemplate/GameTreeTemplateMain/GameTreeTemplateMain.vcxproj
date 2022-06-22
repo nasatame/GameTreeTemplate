@@ -143,6 +143,8 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Defs.hpp" />
+    <ClInclude Include="DirectedAcyclicGraph.hpp" />
     <ClInclude Include="EdgeData.hpp" />
     <ClInclude Include="EdgeTemplate.hpp" />
     <ClInclude Include="GraphTemplate.hpp" />

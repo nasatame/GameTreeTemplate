@@ -59,5 +59,11 @@
     <ClInclude Include="TreeTemplate.hpp">
       <Filter>ヘッダー ファイル\gtt\tree</Filter>
     </ClInclude>
+    <ClInclude Include="Defs.hpp">
+      <Filter>ヘッダー ファイル\gtt\graph</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectedAcyclicGraph.hpp">
+      <Filter>ヘッダー ファイル\gtt\graph</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
