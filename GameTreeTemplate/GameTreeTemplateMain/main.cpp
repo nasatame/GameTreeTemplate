@@ -13,17 +13,18 @@ int main(void) {
 
 	using namespace std;
 
-	using NormalTree =
-		gtt::tree::TreeTemplate<
-		gtt::graph::Edge<gtt::graph::UndirectedEdgeData>,
-		gtt::graph::Vertex<gtt::graph::VertexData>>;
+	using NormalGraph =
+		gtt::graph::GraphTemplate<
+		gtt::graph::Vertex<gtt::graph::VertexData>,
+		gtt::graph::Edge<gtt::graph::EdgeData>>;
 
-	NormalTree tree;
+	NormalGraph graph;
 
-	tree.AddEdge(NormalTree::GraphEdge());
+	graph.AddEdge(NormalGraph::GraphEdge(NormalGraph::GraphEdge::DataType{ 0,1 }));
+	graph.AddVertex(NormalGraph::GraphVertex(NormalGraph::GraphVertex::DataType{ 0 }));
 	 
 	cout << "hello" << endl;
-	cout << tree.VertexSize() << endl;
+	cout << graph.VertexSize() << endl;
 
 	return 0;
 }

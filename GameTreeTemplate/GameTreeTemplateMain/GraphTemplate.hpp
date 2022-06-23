@@ -10,7 +10,7 @@ namespace gtt {
 namespace graph {
 
 /// <summary>
-/// Graph 頂点と辺を持つ
+/// Graph 頂点と辺を持つ。高速に動く以外のすべてを保証しない。
 /// </summary>
 template<class Vertex, class Edge>
 class GraphTemplate {
