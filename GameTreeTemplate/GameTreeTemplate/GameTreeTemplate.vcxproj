@@ -313,6 +313,7 @@
     <Xml Include="App\example\xml\test.xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="GobbletGobblersGUI.h" />
     <ClInclude Include="stdafx.h" />
   </ItemGroup>
   <ItemGroup>
@@ -398,8 +399,11 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\GameTreeTemplateMain\GameTreeTemplateMain.vcxproj">
-      <Project>{1b066dd0-37b0-4d69-949b-a31392cf1d51}</Project>
+    <ProjectReference Include="..\GameTreeTemplateLib\GameTreeTemplateLib.vcxproj">
+      <Project>{81b68a91-9a57-4485-aa57-c1828e60f3eb}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\GobbletGobblers\GobbletGobblers.vcxproj">
+      <Project>{1f767a80-46c6-4741-88fb-ba9821ef1cee}</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

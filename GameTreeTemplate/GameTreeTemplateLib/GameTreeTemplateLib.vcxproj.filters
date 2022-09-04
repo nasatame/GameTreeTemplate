@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ソース ファイル\gtt">
+      <UniqueIdentifier>{3c25a2fe-0e48-4fdb-a6ab-7ca5960b0974}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\gtt\graph">
+      <UniqueIdentifier>{297644fb-7410-47f2-aa99-716531bd996e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\gtt\tree">
+      <UniqueIdentifier>{efa49a12-ba41-4880-9eb1-7e9bb10a0d22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\gtt">
+      <UniqueIdentifier>{2ee86cb0-65e7-4aa1-99bc-dcf016232333}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\gtt\graph">
+      <UniqueIdentifier>{725ee72a-cd8e-4283-9464-24a5f2b8a250}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\gtt\tree">
+      <UniqueIdentifier>{7c431ea5-dbd4-4724-9caf-71c2acfe127d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\framework.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gtt\graph\Defs.hpp">
+      <Filter>ヘッダー ファイル\gtt\graph</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gtt\graph\DirectedAcyclicGraph.hpp">
+      <Filter>ヘッダー ファイル\gtt\graph</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gtt\graph\EdgeData.hpp">
+      <Filter>ヘッダー ファイル\gtt\graph</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gtt\graph\EdgeTemplate.hpp">
+      <Filter>ヘッダー ファイル\gtt\graph</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gtt\graph\GraphTemplate.hpp">
+      <Filter>ヘッダー ファイル\gtt\graph</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gtt\graph\VertexData.hpp">
+      <Filter>ヘッダー ファイル\gtt\graph</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gtt\graph\VertexTemplate.hpp">
+      <Filter>ヘッダー ファイル\gtt\graph</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gtt\tree\TreeTemplate.hpp">
+      <Filter>ヘッダー ファイル\gtt\tree</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\GameTreeTemplateLib.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="source\gtt\graph\GraphTemplate.cpp">
+      <Filter>ソース ファイル\gtt\graph</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
